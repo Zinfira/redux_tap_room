@@ -1,4 +1,53 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Tap room
+
+#### _React Fundamentals 
+
+#### By _**Zinfira Safargalieva**_
+
+## Description
+
+_This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Built a tap room in React where a kombucha store can track their kegs._
+
+
+## User Stories
+
+* As a user, I want to see a list/menu of all available kegs. For each keg, I want to see its name, brand, price and flavor.
+* As a user, I want to submit a form to add a new keg to a list.
+* As a user, I want to be able to click on a keg to see its detail page.
+* As a user, I want to see how many pints are left in a keg. Hint: A full keg has roughly 124 pints.
+* As a user, I want to be able to click a button next to a keg whenever I sell a pint of it. This should decrease the number of pints left by 1. Pints should not be able to go below 0.
+
+## Component diagram
+
+![diagram](diagram.png)
+
+
+## Setup/Installation Requirements
+
+
+## Known Bugs
+
+_Not known bugs at this time._
+
+
+## Support and contact details
+
+_If you have any issues with the program or you have any suggestions, email me <zsafargalieva@gmail.com>_
+
+
+## Technologies Used
+
+_React, JavaScript, Webpack, npm
+
+
+### License
+
+*Licensed under [MIT](https://en.wikipedia.org/wiki/MIT_License) license*
+
+Copyright (c) 2020 **_Zinfira Safargalieva_**
+
+
+
 
 ## Available Scripts
 
