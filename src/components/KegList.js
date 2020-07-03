@@ -7,7 +7,6 @@ const masterKegList = [
     brand: 'Brew Dr.',
     price: 3,
     flavor: "mint",
-    quantity: 5
   }
 ]
 
@@ -20,7 +19,6 @@ function KegList() {
         brand={keg.brand}
         price={keg.price}
         flavor={keg.flavor}
-        quantity={keg.quantity}
         key={index}/>
       )}
     </React.Fragment>
