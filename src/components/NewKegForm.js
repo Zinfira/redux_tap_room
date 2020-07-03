@@ -4,6 +4,14 @@ import PropTypes from 'prop-types';
 
 function NewKegForm(props) {
 
+  const styledNewForm = {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'left',
+    marginTop: '2%',
+    marginButtom: '2%'
+  }
+
   function handleNewKegFormSubmission(event) {
     event.preventDefault();
     props.onNewKegCreation({name: event.target.name.value, 
@@ -15,27 +23,31 @@ function NewKegForm(props) {
   }
 
   return (
-    <React.Fragment>
+    <div style={styledNewForm}>
       <form onSubmit={handleNewKegFormSubmission}>
         <input
           type='text'
           name='name'
           placeholder='Kombucha name' />
+          <br></br>
         <input
           type='text'
           name='brand'
           placeholder='Brand' />
+          <br></br>
         <input
           type='number'
           name='price'
           placeholder='Price' />
+          <br></br>
         <input
           type='text'
           name='flavor'
           placeholder='Flavor' />
-        <button type='submit'>Add Keg</button>
+          <br></br>
+        <button className="add-button" type='submit'>Add Keg</button>
       </form>
-    </React.Fragment>
+    </div>
   );
 }
 

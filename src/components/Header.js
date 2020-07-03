@@ -3,8 +3,8 @@ import React from 'react';
 function Header() {
   const styledHeader = {
     display: 'flex',
-    backgroundColor: '#F8F4E3',
-    color: '#9A998C',
+    backgroundColor: '#FFDCCC',
+    color: '#5D2A42',
     fontFamily: 'Comic Sans MS, Comic Sans, cursive',
     justifyContent: 'center',
     fontSize:'1.5rem'
