@@ -5,6 +5,10 @@ function KegDetail(props) {
 
   const { keg, onClickingBuy } = props;
 
+  function pintsAvailableInStock(quantity) {
+    return quantity > 0 ? <button onClick={()=> onClickingBuy(keg.id)} type="submit">Buy Pint</button> : <p>Out of Stock</p>
+  }
+
   return (
     <React.Fragment>
       <h1>Keg Detail</h1>
@@ -13,7 +17,7 @@ function KegDetail(props) {
       <h3>Price: ${keg.price}</h3>
       <h3>Flavor: {keg.flavor}</h3>
       <h3>Pints in keg: {keg.pintCount}</h3>
-      <button onClick={()=> onClickingBuy(keg.id) }>Buy 1 Pint</button>
+      {pintsAvailableInStock(keg.pintCount)}
       <hr />
     </React.Fragment>
   );
