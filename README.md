@@ -1,6 +1,6 @@
 # Tap room
 
-#### _React Fundamentals 
+#### _React Fundamentals, 07/03/2020_
 
 #### By _**Zinfira Safargalieva**_
 
@@ -11,12 +11,12 @@ _This project was bootstrapped with [Create React App](https://github.com/facebo
 
 ## User Stories
 
-* As a user, I want to see a list/menu of all available kegs. For each keg, I want to see its name, brand, price and flavor.
-* As a user, I want to submit a form to add a new keg to a list.
-* As a user, I want to be able to click on a keg to see its detail page.
-* As a user, I want to see how many pints are left in a keg. Hint: A full keg has roughly 124 pints.
-* As a user, I want to be able to click a button next to a keg whenever I sell a pint of it. This should decrease the number of pints left by 1. Pints should not be able to go below 0.
-* As a user, I want a keg to update to say "Out of Stock" once it's empty.
+* A user is able to see a list/menu of all available kegs. For each keg, the user is able to see its name, brand, price and flavor.
+* A user is able to submit a form to add a new keg to a list.
+* A user is able to click on a keg to see its detail page.
+* A user is able to see how many pints are left in a keg. A full keg has 124 pints. The pint quantity is displayed on Keg Detail page.
+* A user is able to click "Buy Pint" button. This decreases the number of pints left by 1.
+* A user is able to see "Out of Stock" when keg is empty (the pint quantity is 0).
 
 ## Component diagram
 
@@ -25,6 +25,19 @@ _This project was bootstrapped with [Create React App](https://github.com/facebo
 
 ## Setup/Installation Requirements
 
+Clone this repository via Terminal using the following commands:
+
+* >$ cd Desktop
+* >$ git clonehttps://github.com/Zinfira/react_tap_room.git
+* >cd react_tap_room
+
+Next, confirm that you navigated to the react_tap_room project directory by entering ```pwd``` in Terminal.
+Then, run at the project's root directory via Terminal the following commands:
+
+* >$ npm install
+* >$ npm start
+
+This command will start the server. Open the browser(Chrome) and input __localhost:3000__
 
 ## Known Bugs
 
@@ -38,7 +51,7 @@ _If you have any issues with the program or you have any suggestions, email me <
 
 ## Technologies Used
 
-_React, JavaScript, Webpack, npm
+_React, CSS, JavaScript, Webpack, npm
 
 
 ### License
