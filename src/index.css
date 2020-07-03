@@ -1,5 +1,6 @@
 body {
   background-color: #FFF9EC;
+  font-family: 'Comic Sans MS', cursive;
 }
 
 button.my-button {
@@ -10,6 +11,7 @@ button.my-button {
   font-size: 1.5rem;
   padding: 1%;
   border: 1px solid #A2A392;
+  font-family: 'Comic Sans MS', cursive;
 }
 
 input {
@@ -21,11 +23,12 @@ input {
   color: #5D2A42;
 }
 
-button.add-button {
+button.add-buy-button {
   color: #5D2A42;
   background-color: #FFDCCC;
   margin-bottom: 2%;
   width: auto;
   font-size: 1rem;
   border: 1px solid #A2A392;
+  font-family: 'Comic Sans MS', cursive;
 }

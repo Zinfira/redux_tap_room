@@ -7,7 +7,7 @@ const styledKegControl = {
   justifyContent: 'left',
   marginLeft: '2vh',
   marginRight: '2vh',
-  backgroundColor: ''
+  fontFamily: 'Comic Sans MS, Comic Sans, cursive'
 }
 
 class KegControl extends React.Component {

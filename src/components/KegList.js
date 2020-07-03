@@ -3,8 +3,14 @@ import Keg from './Keg';
 import PropTypes from 'prop-types';
 
 function KegList(props) {
+
+  const styledKegList = {
+    fontFamily: 'Comic Sans MS, Comic Sans, cursive',
+    color: '#5D2A42'
+  }
+
   return (
-    <React.Fragment>
+    <div style={styledKegList}>
       <hr />
       {props.kegList.map((keg) =>
         <Keg
@@ -17,7 +23,7 @@ function KegList(props) {
         id={keg.id}
         key={keg.id} />
       )}
-    </React.Fragment>
+    </div>
   );
 }
 

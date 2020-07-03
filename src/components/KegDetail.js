@@ -5,12 +5,17 @@ function KegDetail(props) {
 
   const { keg, onClickingBuy } = props;
 
+  const styledKegDetail = {
+    fontFamily: 'Comic Sans MS, Comic Sans, cursive',
+    color: '#5D2A42'
+  }
+
   function pintsAvailableInStock(quantity) {
-    return quantity > 0 ? <button onClick={()=> onClickingBuy(keg.id)} type="submit">Buy Pint</button> : <p>Out of Stock</p>
+    return quantity > 0 ? <button className="add-buy-button" onClick={()=> onClickingBuy(keg.id)} type="submit">Buy Pint</button> : <p>Out of Stock</p>
   }
 
   return (
-    <React.Fragment>
+    <div style={styledKegDetail}>
       <h1>Keg Detail</h1>
       <h3>Kombucha name: {keg.name}</h3>
       <h3>Made by: {keg.brand}</h3>
@@ -19,7 +24,7 @@ function KegDetail(props) {
       <h3>Pints in keg: {keg.pintCount}</h3>
       {pintsAvailableInStock(keg.pintCount)}
       <hr />
-    </React.Fragment>
+    </div>
   );
 }
 

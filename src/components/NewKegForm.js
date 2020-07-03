@@ -45,7 +45,7 @@ function NewKegForm(props) {
           name='flavor'
           placeholder='Flavor' />
           <br></br>
-        <button className="add-button" type='submit'>Add Keg</button>
+        <button className="add-buy-button" type='submit'>Add Keg</button>
       </form>
     </div>
   );
