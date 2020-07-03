@@ -7,6 +7,7 @@ function Header() {
     color: '#9A998C',
     fontFamily: 'Comic Sans MS, Comic Sans, cursive',
     justifyContent: 'center',
+    fontSize:'1.5rem'
   }
   return (
     <div style={styledHeader}>

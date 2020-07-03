@@ -3,6 +3,13 @@ import NewKegForm from './NewKegForm';
 import KegList from './KegList';
 import KegDetail from './KegDetail';
 
+const styledKegControl = {
+  justifyContent: 'left',
+  marginLeft: '2vh',
+  marginRight: '2vh',
+  backgroundColor: ''
+}
+
 class KegControl extends React.Component {
 
   constructor(props) {
@@ -69,10 +76,10 @@ class KegControl extends React.Component {
       buttonText = "Add Keg";
     }
     return (
-      <React.Fragment>
+      <div style={styledKegControl}>
         {currentlyVisibleState}
-        <button onClick={this.handleClick}>{buttonText}</button>
-      </React.Fragment>
+        <button className="my-button" onClick={this.handleClick}>{buttonText}</button>
+      </div>
     );
   }
   
