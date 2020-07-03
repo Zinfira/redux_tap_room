@@ -10,7 +10,7 @@ function Keg(props) {
   );
 }
 
-Keg.PropTypes = {
+Keg.propTypes = {
   name: PropTypes.string.isRequired
 }
 
