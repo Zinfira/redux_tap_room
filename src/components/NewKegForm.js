@@ -28,22 +28,22 @@ function NewKegForm(props) {
         <input
           type='text'
           name='name'
-          placeholder='Kombucha name' />
+          placeholder='Kombucha name' required/>
           <br></br>
         <input
           type='text'
           name='brand'
-          placeholder='Brand' />
+          placeholder='Brand' required/>
           <br></br>
         <input
           type='number'
           name='price'
-          placeholder='Price' />
+          placeholder='Price' required/>
           <br></br>
         <input
           type='text'
           name='flavor'
-          placeholder='Flavor' />
+          placeholder='Flavor' required/>
           <br></br>
         <button className="add-buy-button" type='submit'>Add Keg</button>
       </form>
