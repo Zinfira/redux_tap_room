@@ -16,6 +16,10 @@ export default (state = {}, action) => {
       const newState = { ...state };
       delete newState[id];
       return newState;
+    case 'BUY_KEG':
+      const pintCountAfterSale = state[id].pintCount - 1;
+      const afterBuyingPint = { ...state, [id]: { ...state[id], pintCount: pintCountAfterSale}};
+      return afterBuyingPint;
   default:
     return state;
   }
