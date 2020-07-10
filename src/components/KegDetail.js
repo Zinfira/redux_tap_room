@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function KegDetail(props) {
 
-  const { keg, onClickingBuy } = props;
+  const { keg, onClickingBuy, onClickingDelete } = props;
 
   const styledKegDetail = {
     fontFamily: 'Comic Sans MS, Comic Sans, cursive',
@@ -23,6 +23,7 @@ function KegDetail(props) {
       <h3>Flavor: {keg.flavor}</h3>
       <h3>Pints in keg: {keg.pintCount}</h3>
       {pintsAvailableInStock(keg.pintCount)}
+      <button onClick={()=> onClickingDelete(keg.id)}>Delete Keg</button>
       <hr />
     </div>
   );
@@ -30,7 +31,8 @@ function KegDetail(props) {
 
 KegDetail.propTypes = {
   keg: PropTypes.object,
-  onClickingBuy: PropTypes.func
+  onClickingBuy: PropTypes.func,
+  onClickingDelete: PropTypes.func
 };
 
 export default KegDetail;

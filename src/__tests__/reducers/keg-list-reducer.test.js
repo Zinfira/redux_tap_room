@@ -12,6 +12,21 @@ describe('kegListReducer', () => {
     id: 1
   };
 
+  const currentState = {
+    1: {name: 'Kombucha',
+    brand: 'Brew Ms',
+    price: 4,
+    flavor: 'Blueberry',
+    pintCount: 124,
+    id: 1 },
+    2: {name: 'Bucha',
+    brand: 'Ducha',
+    price: 3,
+    flavor: 'Guava',
+    pintCount: 124,
+    id: 2 }
+  }
+
   test('Should return default state if there is no action type passed into the reducer', () => {
     expect(kegListReducer({}, { type: null })).toEqual({});
   });
@@ -37,6 +52,21 @@ describe('kegListReducer', () => {
         pintCount: 124,
         id: id
       }
+    });
+  });
+
+  test('Should successfully delete a keg', () => {
+    action = {
+      type: 'DELETE_KEG',
+      id: 1
+    };
+    expect(kegListReducer(currentState, action)).toEqual({
+      2: {name: 'Bucha',
+      brand: 'Ducha',
+      price: 3,
+      flavor: 'Guava',
+      pintCount: 124,
+      id: 2 }
     });
   });
 });
