@@ -4,7 +4,7 @@ import KegList from './KegList';
 import KegDetail from './KegDetail';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import Keg from './Keg';
+import * as a from './../actions';
 
 const styledKegControl = {
   justifyContent: 'left',
@@ -31,29 +31,16 @@ class KegControl extends React.Component {
       });
     } else {
       const { dispatch } = this.props;
-      const action = {
-        type: 'TOGGLE_FORM'
-      }
+      const action = a.toggleForm();
       dispatch(action);
     }
   }
 
   handleAddingNewKegToList = (newKeg) => {
     const { dispatch } = this.props;
-    const { id, name, brand, price, flavor } = newKeg;
-    const action = {
-      type: 'ADD_KEG',
-      id: id,
-      name: name,
-      brand: brand,
-      price: price,
-      flavor: flavor,
-      pintCount: 124,
-    }
+    const action = a.addKeg(newKeg);
     dispatch(action);
-    const action2 = {
-      type: 'TOGGLE_FORM'
-    }
+    const action2 = a.toggleForm();
     dispatch(action2);
   }
 
@@ -75,10 +62,7 @@ class KegControl extends React.Component {
 
   handleDeletingKeg = (id) => {
     const { dispatch } = this.props;
-    const action = {
-      type: 'DELETE_KEG',
-      id: id
-    }
+    const action = a.deleteKeg(id);
     dispatch(action);
     this.setState({selectedKeg: null});
   }
