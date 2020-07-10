@@ -13,4 +13,16 @@ describe('tap room actions', () => {
       type: 'TOGGLE_FORM'
     });
   });
+
+  it('addKeg should create ADD_KEG action', () => {
+    expect(actions.addKeg({name: 'Kombucha', brand: 'Bucha', price: 3, flavor: 'Blueberry', pinCount: 124, id: 1})).toEqual({
+      type: 'ADD_KEG',
+      name: 'Kombucha',
+      brand: 'Bucha',
+      price: 3,
+      flavor: 'Blueberry',
+      pintCount: 124,
+      id: 1
+    });
+  });
 });
