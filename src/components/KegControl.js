@@ -51,10 +51,7 @@ class KegControl extends React.Component {
 
   handleBuyingKeg = (id) => {
     const { dispatch } = this.props;
-    const action = {
-      type: 'BUY_KEG',
-      id: id
-    }
+    const action = a.buyKeg(id);
     dispatch(action);
     this.setState({selectedKeg: null});
   }
