@@ -36,7 +36,7 @@ function NewKegForm(props) {
           placeholder='Brand' required/>
           <br></br>
         <input
-          type='number' min="1"
+          type='number' min="0.01" step="0.01"
           name='price'
           placeholder='Price' required/>
           <br></br>

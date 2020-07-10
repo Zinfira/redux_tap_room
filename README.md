@@ -1,12 +1,12 @@
 # Tap room
 
-#### _React Fundamentals, 07/03/2020_
+#### _React with Redux, 07/10/2020_
 
 #### By _**Zinfira Safargalieva**_
 
 ## Description
 
-_This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Built a tap room in React where a kombucha store can track their kegs._
+_This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Built a tap room in React where a kombucha store can track their kegs. Redux stores all application state._
 
 
 ## User Stories
@@ -17,6 +17,7 @@ _This project was bootstrapped with [Create React App](https://github.com/facebo
 * A user is able to see how many pints are left in a keg. A full keg has 124 pints. The pint quantity is displayed on Keg Detail page.
 * A user is able to click "Buy Pint" button. This decreases the number of pints left by 1.
 * A user is able to see "Out of Stock" when keg is empty (the pint quantity is 0).
+* A user is able to remove a created keg from tap room.
 
 ## Component diagram
 
@@ -28,10 +29,10 @@ _This project was bootstrapped with [Create React App](https://github.com/facebo
 Clone this repository via Terminal using the following commands:
 
 * >$ cd Desktop
-* >$ git clonehttps://github.com/Zinfira/react_tap_room.git
-* >cd react_tap_room
+* >$ git clone https://github.com/Zinfira/redux_tap_room.git
+* >cd redux_tap_room
 
-Next, confirm that you navigated to the react_tap_room project directory by entering ```pwd``` in Terminal.
+Next, confirm that you navigated to the `redux_tap_room` project directory by entering ```pwd``` in Terminal.
 Then, run at the project's root directory via Terminal the following commands:
 
 * >$ npm install
@@ -41,7 +42,7 @@ This command will start the server. Open the browser(Chrome) and input __localho
 
 ## Known Bugs
 
-_Not known bugs at this time._
+_Do not have update functionality yet._
 
 
 ## Support and contact details
@@ -51,7 +52,7 @@ _If you have any issues with the program or you have any suggestions, email me <
 
 ## Technologies Used
 
-_React, CSS, JavaScript, Webpack, npm
+_React, Redux, CSS, JavaScript, Webpack, npm, Jest
 
 
 ### License
