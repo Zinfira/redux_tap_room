@@ -28,13 +28,8 @@ describe('tap room actions', () => {
   });
 
   it('buyKeg should create BUY_KEG action', () => {
-    expect(actions.buyKeg({name: 'Kombucha', brand: 'Bucha', price: 3, flavor: 'Blueberry', pintCount: 124, id: 1})).toEqual({
+    expect(actions.buyKeg(1)).toEqual({
       type: c.BUY_KEG,
-      name: 'Kombucha',
-      brand: 'Bucha',
-      price: 3,
-      flavor: 'Blueberry',
-      pintCount: 123,
       id: 1
     });
   });

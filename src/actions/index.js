@@ -21,3 +21,8 @@ export const addKeg = (keg) => {
     id: id
   }
 }
+
+export const buyKeg = id => ({
+  type: c.BUY_KEG,
+  id
+})
