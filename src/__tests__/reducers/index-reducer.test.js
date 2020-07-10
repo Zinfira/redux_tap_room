@@ -20,4 +20,26 @@ describe("rootReducer", () => {
   test('Check that initial state of formVisibleReducer matches root reducer', () => {
     expect(store.getState().formVisibleOnPage).toEqual(formVisibleReducer(undefined, { type: null }));
   });
+
+  test('Check that initial state of kegListReducer mathes root reduser', () => {
+    const action = {
+      type: 'ADD_KEG',
+      name: 'Kombucha',
+      brand: 'Ms Brew',
+      price: 3,
+      flavor: 'Berry mix',
+      pintCount: 124,
+      id: 1
+    }
+    store.dispatch(action);
+    expect(store.getState().masterKegList).toEqual(kegListReducer(undefined, action));
+  });
+
+  test('Check that initial state of formVisibleReducer matches root reducer', () => {
+    const action = {
+      type: 'TOGGLE_FORM'
+    }
+    store.dispatch(action);
+    expect(store.getState().formVisibleOnPage).toEqual(formVisibleReducer(undefined, action));
+  });
 });
