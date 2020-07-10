@@ -23,7 +23,7 @@ function KegDetail(props) {
       <h3>Flavor: {keg.flavor}</h3>
       <h3>Pints in keg: {keg.pintCount}</h3>
       {pintsAvailableInStock(keg.pintCount)}
-      <button onClick={()=> onClickingDelete(keg.id)}>Delete Keg</button>
+      <button className="add-buy-button" onClick={()=> onClickingDelete(keg.id)}>Delete Keg</button>
       <hr />
     </div>
   );
