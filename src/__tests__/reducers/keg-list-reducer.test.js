@@ -8,6 +8,7 @@ describe('kegListReducer', () => {
     brand: 'Brew Ms',
     price: 4,
     flavor: 'Blueberry',
+    pintCount: 124,
     id: 1
   };
 
@@ -23,6 +24,7 @@ describe('kegListReducer', () => {
       brand: brand,
       price: price,
       flavor: flavor,
+      pintCount: 124,
       id: id
     };
 
@@ -32,6 +34,7 @@ describe('kegListReducer', () => {
         brand: brand,
         price: price,
         flavor: flavor,
+        pintCount: 124,
         id: id
       }
     });
