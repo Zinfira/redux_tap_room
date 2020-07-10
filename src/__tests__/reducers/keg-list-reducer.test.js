@@ -69,4 +69,25 @@ describe('kegListReducer', () => {
       id: 2 }
     });
   });
+
+  test('Should successfully decrease pintCount by 1', () => {
+    action = {
+      type: 'BUY_KEG',
+      id: 1
+    };
+    expect(kegListReducer(currentState, action)).toEqual({
+      1: {name: 'Kombucha',
+        brand: 'Brew Ms',
+        price: 4,
+        flavor: 'Blueberry',
+        pintCount: 123,
+        id: 1 },
+      2: {name: 'Bucha',
+        brand: 'Ducha',
+        price: 3,
+        flavor: 'Guava',
+        pintCount: 124,
+        id: 2 }
+    });
+  });
 });
